@@ -9,12 +9,24 @@ license: MIT
 author: http://github.com/laurahilliger
 */
 
-html,body {
+.mainPage {
 	/*Image of the Rainbow Warrior taken from Wikipedia, authored by Salvatore Barbera https://commons.wikimedia.org/wiki/File:%22Rainbow_Warrior_II%22_On_The_Bosphorus.jpg */
 	height: 100%;
 	background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg") no-repeat fixed center center / cover;
     background-color: transparent;
     background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+}
+
+.storyarc{
+	background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg") no-repeat fixed center center / cover;
+	background-color: rgba(255, 255, 255, 0.7);
+    background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -30,19 +42,6 @@ html,body {
 .grey {
 	background-color:#ccc;
 	padding:3% 0%;
-}
-
-.storyarc{
-	height: 100%;
-	background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg") no-repeat fixed center center / cover;
-	background-color: rgba(255, 255, 255, 0.7);
-    background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: cover;
 }
 
 .navbar-trans {
@@ -65,7 +64,11 @@ html,body {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
 }
 
-.btn-primary {
+.btn{
+	margin-bottom:1%;
+}
+
+.btn-primary{
 	background:#ff7704;
 	border:1px solid #d05f00;
 	color:#fff
@@ -110,7 +113,7 @@ a.list-group-item.active:hover, a.list-group-item.active:focus {
     border-color: #3C7008;
 }
   
-#section1, #section3 {
+#section1, #section3, #section5 {
 	background-color: rgba(0, 0, 0, 0.7);
     color:#dedeff;
 }
