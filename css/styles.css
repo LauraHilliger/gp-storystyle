@@ -12,7 +12,7 @@ author: http://github.com/laurahilliger
 html,body {
 	/*Image of the Rainbow Warrior taken from Wikipedia, authored by Salvatore Barbera https://commons.wikimedia.org/wiki/File:%22Rainbow_Warrior_II%22_On_The_Bosphorus.jpg */
 	height: 100%;
-background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg") no-repeat fixed center center / cover;
+	background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg") no-repeat fixed center center / cover;
     background-color: transparent;
     background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg");
     background-repeat: no-repeat;
@@ -25,6 +25,24 @@ background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-
 
 .icon-bar {
 	background-color:#fff;
+}
+
+.grey {
+	background-color:#ccc;
+	padding:3% 0%;
+}
+
+.storyarc{
+	height: 100%;
+	background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg") no-repeat fixed center center / cover;
+    background-color: transparent;
+    background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/storyarc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
 }
 
 .navbar-trans {
@@ -66,9 +84,14 @@ section {
     padding-top:10%;
     font-size:4em;
 }
-h2.v-center{
+h2.v-center, h3.v-center{
 	padding-top:5%;
-	font-size:2em;
+	font-size:2.5em;
+	font-weight: 100;
+}
+h3.v-center{
+	padding-top:0%;
+	font-size:1.5em;
 }
   
 .well {
