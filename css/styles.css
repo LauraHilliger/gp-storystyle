@@ -64,7 +64,11 @@ section {
 
 .v-center {
     padding-top:10%;
-    font-size:70px;
+    font-size:4em;
+}
+h2.v-center{
+	padding-top:5%;
+	font-size:2em;
 }
   
 .well {
@@ -84,7 +88,7 @@ a.list-group-item.active:hover, a.list-group-item.active:focus {
 }
   
 #section1, #section3 {
-	background-color: rgba(60, 112, 8, 0.7);
+	background-color: rgba(0, 0, 0, 0.7);
     color:#dedeff;
 }
   
