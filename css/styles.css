@@ -12,9 +12,9 @@ author: http://github.com/laurahilliger
 html,body {
 	/*Image of the Rainbow Warrior taken from Wikipedia, authored by Salvatore Barbera https://commons.wikimedia.org/wiki/File:%22Rainbow_Warrior_II%22_On_The_Bosphorus.jpg */
 	height: 100%;
-background: transparent url("images/rainbowwarrior.jpg") no-repeat fixed center center / cover;
+background: transparent url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg") no-repeat fixed center center / cover;
     background-color: transparent;
-    background-image: url("images/rainbowwarrior.jpg");
+    background-image: url("https://raw.githubusercontent.com/LauraHilliger/gp-storystyle/master/images/rainbowwarrior.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
