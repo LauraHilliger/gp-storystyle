@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Global Engagement Department Nodes</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+<style>
+	@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v7/gQ0PT3rPU_Et2ExNz-ahmpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+  body {
+    background-color:#D6FCBE;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+  }
+  
+  h1{
+	  font-family: 'Nixie One';
+	  padding:3%;
+  }
+  
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+
+.link.team {
+  stroke: green;
+}
+  
+ .link.lead {
+  stroke: grey;
+}
+
+ .link.director {
+  stroke: blue;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+
+circle {
+  fill: green;
+  stroke: #333;
+  stroke-width: 1px;
+}
+
+text {
+  font: 14px sans-serif;
+  pointer-events: none;
+}
+  
+  g { 
+    fill: #333;
+   }
+
+</style>
+<body>
+  <h1>Global Engagement Department</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.11/d3.min.js"></script>
+<script>
+
+// http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/
+var links = [
+  {source: "Executive Assistant", target: "Global Engagement Director", type: "director"},
+  
+  {source: "Head of Storytelling and Comms Support", target: "Global Engagement Director", type: "director"},
+  	{source: "Staff Engagement Advisor", target: "Head of Storytelling and Comms Support", type: "lead"},
+  	{source: "Storytelling Advisor", target: "Head of Storytelling and Comms Support", type: "lead"},
+  	{source: "Library Manager", target: "Head of Storytelling and Comms Support", type: "lead"},
+  		{source: "4x Image Librarians", target: "Library Manager"},
+  	{source: "Hubs Coordinator", target: "Head of Storytelling and Comms Support", type: "lead"},
+  		{source: "Web Coordinator", target: "Hubs Coordinator"},
+  		{source: "Managing Editor (Americas)", target: "Hubs Coordinator"},
+  				{source: "Content Editors (Americas)", target: "Managing Editor (Americas)"},
+  				{source: "2x Multimedia Editors (Americas) ", target: "Managing Editor (Americas)"},
+  		{source: "Managing Editor (Asia/Pacific)", target: "Hubs Coordinator"},
+  				{source: "2x Content Editors (Asia/Pacific)", target: "Managing Editor (Asia/Pacific)"},
+  				{source: "Multimedia Editors (Asia/Pacific)", target: "Managing Editor (Asia/Pacific)"},
+  		{source: "Managing Editor (EU, Middle East, India, Africa)", target: "Hubs Coordinator"},
+  				{source: "Content Editors (EU, Middle East, India, Africa)", target: "Managing Editor (EU, Middle East, India, Africa)"},
+  				{source: "2x Multimedia Editors (EU, Middle East, India, Africa)", target: "Managing Editor (EU, Middle East, India, Africa)"},
+  
+  {source: "Head of Engagement Strategy", target: "Global Engagement Director", type: "director"},
+  	{source: "Strategy & Planning Manager", target: "Head of Engagement Strategy", type: "lead"},
+  	{source: "Insight Manager", target: "Head of Engagement Strategy", type: "lead"},
+  		{source: "Insight Analyst", target: "Insight Manager"},
+  		{source: "Digital Mobilization Analyst", target: "Insight Manager"},	
+  	{source: "Research Manager", target: "Head of Engagement Strategy", type: "lead"},
+  	{source: "Engagement Systems Manager", target: "Head of Engagement Strategy", type: "lead"},
+  		{source: "Engagement Systems Technical Lead", target: "Engagement Systems Manager"},
+  		{source: "2x Functional Support", target: "Engagement Systems Manager"},
+  			
+{source: "4x Global Engagement Managers", target: "Global Engagement Director", type: "director"},
+
+{source: "Head of Engagement Support", target: "Global Engagement Director", type: "director"},
+	{source: "Head of 1st Engagement", target: "Head of Engagement Support", type: "lead"},
+		{source: "5x First Engagement Manager", target: "Head of 1st Engagement"},
+	{source: "Head of Supporter Journey", target: "Head of Engagement Support", type: "lead"},
+		{source: "3x Supporter Journey Manager", target: "Head of Supporter Journey"},
+	{source: "Major Donor Manager", target: "Head of Engagement Support", type: "lead"},
+	{source: "Legacy Manager", target: "Head of Engagement Support", type: "lead"},
+
+
+];
+
+var nodes = {};
+
+// Compute the distinct nodes from the links.
+links.forEach(function(link) {
+  link.source = nodes[link.source] || (nodes[link.source] = {name: link.source});
+  link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
+});
+
+var width = 1440,
+    height = 600;
+
+var force = d3.layout.force()
+    .nodes(d3.values(nodes))
+    .links(links)
+    .size([width, height])
+    .linkDistance(500)
+    .charge(-500)
+    .on("tick", tick)
+    .start();
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+// Per-type markers, as they don't inherit styles.
+svg.append("defs").selectAll("marker")
+    .data(["suit", "licensing", "resolved"])
+  .enter().append("marker")
+    .attr("id", function(d) { return d; })
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", -1.5)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+  .append("path")
+    .attr("d", "M0,-5L10,0L0,5");
+
+var path = svg.append("g").selectAll("path")
+    .data(force.links())
+  .enter().append("path")
+    .attr("class", function(d) { return "link " + d.type; })
+    .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
+
+var circle = svg.append("g").selectAll("circle")
+    .data(force.nodes())
+  .enter().append("circle")
+    .attr("r", 5)
+    .call(force.drag);
+
+var text = svg.append("g").selectAll("text")
+    .data(force.nodes())
+  .enter().append("text")
+    .attr("x", 10)
+    .attr("y", "0")
+    .text(function(d) { return d.name; });
+  
+
+// Use elliptical arc path segments to doubly-encode directionality.
+function tick() {
+  path.attr("d", linkArc);
+  circle.attr("transform", transform);
+  text.attr("transform", transform);
+}
+
+function linkArc(d) {
+  var dx = d.target.x - d.source.x,
+      dy = d.target.y - d.source.y,
+      dr = Math.sqrt(dx * dx + dy * dy);
+  return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+}
+
+function transform(d) {
+  return "translate(" + d.x + "," + d.y + ")";
+}
+
+</script>
