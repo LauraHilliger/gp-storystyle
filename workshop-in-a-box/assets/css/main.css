@@ -2270,7 +2270,7 @@
 			color: #555;
 			cursor: default;
 			display: inline-block;
-			margin: 0 0 1.5em 0;
+			margin: 0 0 0 0;
 		}
 
 			.icon.major:before {
@@ -2283,7 +2283,7 @@
 			}
 
 			.icon.major:before {
-				font-size: 4em;
+				font-size: 2.5em;
 				line-height: 1em;
 			}
 
@@ -2519,7 +2519,8 @@
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: .94em .75em;
+			vertical-align: middle;
 		}
 
 		table th {
