@@ -2797,12 +2797,23 @@
 
 /* Header */
 
-	#header {
-		padding: 9em 0 9em 0 ;
+	.header {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9DC66A 5%, #2AABE2 30%, #194998);
+		background-position: top left,						center center,					center center;
+		background-size: auto,							cover,							cover;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+	}
+	
+	.header2{
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #D93330 5%, #F48220 30%, #194998);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
