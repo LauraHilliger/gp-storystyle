@@ -2270,7 +2270,11 @@
 			color: #555;
 			cursor: default;
 			display: inline-block;
+<<<<<<< HEAD
 			margin: 0 0 1.5em 0;
+=======
+			margin: 0 0 0 0;
+>>>>>>> gh-pages
 		}
 
 			.icon.major:before {
@@ -2283,7 +2287,11 @@
 			}
 
 			.icon.major:before {
+<<<<<<< HEAD
 				font-size: 4em;
+=======
+				font-size: 2.5em;
+>>>>>>> gh-pages
 				line-height: 1em;
 			}
 
@@ -2519,7 +2527,12 @@
 			}
 
 		table td {
+<<<<<<< HEAD
 			padding: 0.75em 0.75em;
+=======
+			padding: .94em .75em;
+			vertical-align: middle;
+>>>>>>> gh-pages
 		}
 
 		table th {
