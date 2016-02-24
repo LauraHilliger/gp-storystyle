@@ -2271,7 +2271,11 @@
 			cursor: default;
 			display: inline-block;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			margin: 0 0 1.5em 0;
+=======
+			margin: 0 0 0 0;
+>>>>>>> gh-pages
 =======
 			margin: 0 0 0 0;
 >>>>>>> gh-pages
@@ -2288,7 +2292,11 @@
 
 			.icon.major:before {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				font-size: 4em;
+=======
+				font-size: 2.5em;
+>>>>>>> gh-pages
 =======
 				font-size: 2.5em;
 >>>>>>> gh-pages
@@ -2528,7 +2536,12 @@
 
 		table td {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			padding: 0.75em 0.75em;
+=======
+			padding: .94em .75em;
+			vertical-align: middle;
+>>>>>>> gh-pages
 =======
 			padding: .94em .75em;
 			vertical-align: middle;
