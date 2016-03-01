@@ -1948,6 +1948,26 @@
 		text-align: right;
 	}
 	
+	/* Slide decks */
+	.deck{
+		margin:0 0 3em 0;
+	}
+	.deck p{
+		margin:0;
+	}
+	
+	.deck h3{
+		margin: 0 0 .9em 0;
+	}
+	
+	.deck ul {
+		margin:0 0 4em 0;
+	}
+	
+	.deck ul li{
+		float:right;
+	}
+	
 /* Navigation */
 	
 	nav {
@@ -2843,6 +2863,20 @@
 		text-align: center;
 	}
 
+	.header3{
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #3fc7f3 5%, #FAED32 30%, #194998);
+		background-position: top left,						center center,					center center;
+		background-size: auto,							cover,							cover;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+	}
+
+
+
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
@@ -3135,7 +3169,7 @@
 
 /* XLarge */
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 2080px) {
 
 		/* Basic */
 

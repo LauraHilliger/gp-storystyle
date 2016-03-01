@@ -18,8 +18,6 @@ section {
 .wrapper {
   width: 100%;
   margin: 0;
-  page-break-after: always;
-  page-break-inside: avoid;
 }
 
 #teachingkit-banner {
@@ -31,6 +29,7 @@ section {
   background-color: #fff;
   padding: 35px 0 30px 20px;
   overflow: hidden;
+  page-break-after: avoid;
 }
 
 #header h1 {
@@ -49,6 +48,7 @@ section {
 #content {
   border-radius: none;
   box-shadow: none;
+  page-break-inside: always;
 }
 
 #left-side {
@@ -120,12 +120,4 @@ section {
   font-size: 22px;
   color: #00be7a;
   font-weight: 300;
-}
-
-.note-paper {
-  display: none;
-}
-
-.note-paper-side {
-  display: none;
 }

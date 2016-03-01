@@ -3,22 +3,13 @@ section {
   font-weight: 300;
   line-height: 1;
   margin-bottom: 50px;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 10px;
 }
 
-section div {
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-i {
-  font-size: 45px;
-}
-
-section h1 {
+section > h1 {
   margin-top: 0;
-  font-size: 45px;
+  font-size: 46px;
 }
 
 .wrapper {
@@ -29,18 +20,15 @@ section h1 {
 #header {
   padding: 30px;
   text-align: center;
-  -webkit-flex-direction: column;
   -webkit-box-orient: vertical;
-}
-
-#header-img img {
-  position: relative;
-  left: auto;
 }
 
 #header-content {
   left: auto;
-  margin: auto;
+}
+
+#header-img img {
+  left: 0;
 }
 
 #header-group {
@@ -69,7 +57,7 @@ section h1 {
 
 #content {
   display: table;
-  padding: 30px 5px;
+  padding: 0 5px 30px 5px;
 }
 
 #left-side {
@@ -83,25 +71,17 @@ section h1 {
   font-weight: 400;
   line-height: 1.5;
 }
-.small-checkbox-section div,
+
 #review div {
   font-size: 28px;
   font-weight: 400;
 }
 
-.small-checkbox-section ul,
 #review ul {
   font-size: 26px;
   font-weight: 400;
 }
 
-.small-checkbox-section li {
-  position: relative;
-  bottom: 5px;
-  font-size: 30px;
-}
-
-.small-checkbox-section input[type=checkbox] + label:after,
 #review input[type=checkbox] + label:after {
   position: relative;
   display: inline-block;
@@ -120,6 +100,14 @@ section h1 {
   display: table-header-group;
 }
 
+#agenda {
+  padding-left: 10px;
+}
+
+#agenda > h1 {
+  padding-left: 10px;
+}
+
 #agenda ol {
   font-size: 30px;
   line-height: 55px;
@@ -135,9 +123,10 @@ section h1 {
   font-weight: 400;
 }
 
-#agenda a {
+#agenda ol li a {
   display: inline-block;
   line-height: 1.2;
+  vertical-align: middle;
 }
 
 #agenda ol li:before {
@@ -145,7 +134,7 @@ section h1 {
 }
 
 #resources ul {
-  padding-left: 20px;
+  padding-left: 0;
   margin-bottom: 0;
 }
 
@@ -168,13 +157,9 @@ section h1 {
   vertical-align: middle;
 }
 
-.tag-section {
-  margin-bottom: 40px;
-}
-
 #tags {
-  padding-top: 30px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  margin-bottom: 50px;
 }
 
 #tags ul {
@@ -182,42 +167,24 @@ section h1 {
 }
 
 .tag-item {
-  line-height: 1;
   font-size: 30px;
   font-weight: 300;
   padding: 30px 25px;
   margin: 0 10px 10px 0;
 }
 
-#about h1,
-#review h1 {
-  font-size: 48px;
+#about > h1,
+#review > h1 {
+  font-size: 50px;
   line-height: 1;
   margin-bottom: 22px;
 }
 
-.step-section ol {
-  position: relative;
-  width: 90%;
-  left: 50px;
+#left-side > section > h1 {
+  font-size: 50px;
 }
 
-.step-section ol > li:before {
-  font-size: 20px;
-}
-
-.small-checkbox-section ul {
-  font-size: 26px;
-}
-
-.example-div {
-  max-width: none;
-}
-
-.example-div ul {
-  padding-left: 40px;
-}
-
-.big-green-title {
-  font-size: 55px;
+.teach-checklist div,
+#review div {
+  padding: 25px 17px;
 }
