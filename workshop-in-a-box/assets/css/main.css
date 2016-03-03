@@ -2302,6 +2302,9 @@
 		.icon.style6:before {
 			color: #6b88e6;
 		}
+			.icon.style7:before {
+			color: #8A62A5;
+		}
 
 		.icon.major {
 			text-decoration: none;
