@@ -3018,7 +3018,7 @@
 		visibility: hidden;
 		z-index: 10002;
 	}
-
+	
 		#menu > .inner {
 			-moz-transition: opacity 0.45s ease;
 			-webkit-transition: opacity 0.45s ease;
@@ -3045,6 +3045,7 @@
 					padding: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
 				}
+				
 
 					#menu > .inner > ul > li a {
 						display: block;
