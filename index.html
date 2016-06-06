@@ -217,7 +217,7 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="mailto:laura.hilliger@greenpeace.org">
+								<form method="post" action="post-form.php">
 									<div class="field half first">
 										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
@@ -227,8 +227,10 @@
 									<div class="field">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
 									</div>
+									<label>What is 9+2? (Anti-spam)</label>
+										<input name="human" placeholder="Type Here">
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="special" /></li>
+										<li><input type="submit" name="submit" value="Send" class="special" /></li>
 									</ul>
 								</form>
 							</section>
