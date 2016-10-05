@@ -1,0 +1,66 @@
+body{
+	font-family: 'Open Sans', Arial, Helvetica, Verdana;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#2AABE2;
+	font-family: "Source Sans Pro", 'Open Sans', Arial, Helvetica, Verdana;
+}
+
+h1{
+	font-weight: 400;
+}
+
+.container{
+}
+
+#about{
+	background-image: url('http://media.greenpeace.org/GPIDoc/GPI/Media/CMS1/6/3/e/d/GP0STPMWE.jpg');
+}
+.headerImg{
+	background-size: contain;
+	background-repeat: none;
+}
+
+figure  {
+	  display: block;
+	  float:right;
+	  padding-left:5%;
+}
+
+img {
+  border-radius: 8px;
+  width:100%;
+}
+
+figcaption {
+  display: block;
+
+}
+
+figcaption {
+  padding: 5px;
+  font-size: .7em;
+  border: none;
+  word-wrap:normal;
+  text-align: center;
+}
+
+.alignmiddle{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.stories{
+	background-color: #DBF1FC;
+	border-radius: 8px;
+	padding:1%;
+	margin-bottom:2%;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+	background-color: none;
+}
