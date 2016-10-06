@@ -4,7 +4,7 @@
 
 <head>
 <meta charset="utf-8">
-<title><?php echo($project_name)?>Brand Guide</title>
+<title><?php echo($project_name)?>Story and Content Guide</title>
 <meta name="viewport" content="width=device-width">
 <!-- Style Guide Boilerplate Styles -->
 <link rel="stylesheet" href="css/styleguide.css">
