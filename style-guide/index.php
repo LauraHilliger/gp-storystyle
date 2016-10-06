@@ -1,5 +1,5 @@
  <?php include_once('functions.php'); ?>
- <?php $project_name = "Greenpeace"; ?>
+ <?php $project_name = "GreenpeaceStyle"; ?>
 <!DOCTYPE html>
 
 <head>

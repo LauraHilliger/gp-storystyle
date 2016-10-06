@@ -1,7 +1,7 @@
 body{
 	font-family: 'Open Sans', Arial, Helvetica, Verdana;
-	font-size: 15px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 28px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -33,9 +33,10 @@ ul li, ol li{
 }
 
 .guideImg>a>img{
-width: 40%;
+width: 30%;
 float: left;
 margin-right: 5%;
+margin-top: 3%;
 }
 
 .rightImg figure  {
