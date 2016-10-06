@@ -24,15 +24,18 @@ h1{
 	background-repeat: none;
 }
 
-figure  {
+.rightImg figure  {
 	  display: block;
 	  float:right;
 	  padding-left:5%;
 }
+.leftImg figure  {
+	  display: block;
+	  padding-right:5%;
+}
 
 img {
   border-radius: 8px;
-  width:100%;
 }
 
 figcaption {
@@ -56,11 +59,28 @@ figcaption {
 .stories{
 	background-color: #DBF1FC;
 	border-radius: 8px;
-	padding:1%;
+	padding:2% 6%;
 	margin-bottom:2%;
+}
+
+.carousel-control{
+	width:5%;
+	font-size:30px;
+	color:#2AABE2;
+	text-shadow:none;
 }
 
 .carousel-control.left, .carousel-control.right{
 	background-image: none;
 	background-color: none;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next{
+	font-size: 2em;
+}
+.carousel-control .icon-prev{
+	left:50%;
+}
+.carousel-control .icon-next{
+	right:30%;
 }
