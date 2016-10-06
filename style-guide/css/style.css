@@ -32,6 +32,12 @@ ul li, ol li{
 	background-repeat: none;
 }
 
+.guideImg>a>img{
+width: 40%;
+float: left;
+margin-right: 5%;
+}
+
 .rightImg figure  {
 	  display: block;
 	  float:right;
