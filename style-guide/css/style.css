@@ -1,0 +1,116 @@
+body{
+	font-family: 'Open Sans', Arial, Helvetica, Verdana;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#2AABE2;
+	font-family: "Source Sans Pro", 'Open Sans', Arial, Helvetica, Verdana;
+}
+
+h1{
+	font-weight: 400;
+}
+
+ul, ol{
+	margin-bottom:2%;
+}
+
+ul li, ol li{
+	margin:1%;
+}
+
+.container{
+}
+
+#about{
+	background-image: url('http://media.greenpeace.org/GPIDoc/GPI/Media/CMS1/6/3/e/d/GP0STPMWE.jpg');
+}
+.headerImg{
+	background-size: contain;
+	background-repeat: none;
+}
+
+.guideImg>a>img{
+width: 40%;
+float: left;
+margin-right: 5%;
+}
+
+.rightImg figure  {
+	  display: block;
+	  float:right;
+	  padding-left:5%;
+}
+.leftImg figure  {
+	  display: block;
+	  padding-right:5%;
+}
+
+img {
+  border-radius: 8px;
+  width:100%;
+}
+
+figcaption {
+  display: block;
+
+}
+
+figcaption {
+  padding: 5px;
+  font-size: .7em;
+  border: none;
+  word-wrap:normal;
+  text-align: center;
+}
+
+.tagline {
+	padding:10%;
+}
+
+.tagline figcaption{
+	font-size: 1.2em;
+}
+
+.alignmiddle{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.stories, .blueBox{
+	background-color: #DBF1FC;
+	border-radius: 8px;
+	margin-bottom:2%;
+}
+
+.stories{
+	padding:2% 6%;
+}
+
+.blueBox{
+	padding:2% 2%;
+}
+
+.carousel-control{
+	width:5%;
+	font-size:30px;
+	color:#2AABE2;
+	text-shadow:none;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background-image: none;
+	background-color: none;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next{
+	font-size: 2em;
+}
+.carousel-control .icon-prev{
+	left:50%;
+}
+.carousel-control .icon-next{
+	right:30%;
+}
