@@ -195,20 +195,11 @@ ul.scroll-menu {
 /* -------------------------------------------------------------------------
  Colors
 ---------------------------------------------------------------------------- */
-.sg-brand-primary .sg-color-swatch {
-  background: #bbbbbb;
+.brand-primary .sg-color-swatch {
+  background: #66CC00;
 }
-.sg-gray-lighter .sg-color-swatch {
-  background: #dddddd;
-}
-.sg-gray-light .sg-color-swatch {
-  background: #808080;
-}
-.sg-gray .sg-color-swatch {
-  background: #555555;
-}
-.sg-gray-dark .sg-color-swatch {
-  background: #333333;
+.green-dark .sg-color-swatch {
+  background: #003300;
 }
 .sg-gray-darker .sg-color-swatch {
   background: #222222;
@@ -231,11 +222,11 @@ ul.scroll-menu {
   font-size: 1.8em;
   padding: 0 0 .2em 0;
 }
-.sg-font-primary {
+.font-primary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.sg-font-secondary {
-  font-family: Georgia, "Times New Roman", Times, serif;
+.font-secondary {
+  font-family: "Helvetica Neue Condensed", Helvetica, Arial, sans-serif; 
 }
 /* Grid
 ---------------------------------------------------------------------------- */

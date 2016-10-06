@@ -13,6 +13,14 @@ h1{
 	font-weight: 400;
 }
 
+ul, ol{
+	margin-bottom:2%;
+}
+
+ul li, ol li{
+	margin:1%;
+}
+
 .container{
 }
 
@@ -36,6 +44,7 @@ h1{
 
 img {
   border-radius: 8px;
+  width:100%;
 }
 
 figcaption {
@@ -51,16 +60,31 @@ figcaption {
   text-align: center;
 }
 
+.tagline {
+	padding:10%;
+}
+
+.tagline figcaption{
+	font-size: 1.2em;
+}
+
 .alignmiddle{
 	text-align: center;
 	vertical-align: middle;
 }
 
-.stories{
+.stories, .blueBox{
 	background-color: #DBF1FC;
 	border-radius: 8px;
-	padding:2% 6%;
 	margin-bottom:2%;
+}
+
+.stories{
+	padding:2% 6%;
+}
+
+.blueBox{
+	padding:2% 2%;
 }
 
 .carousel-control{
