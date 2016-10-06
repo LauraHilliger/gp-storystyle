@@ -17,7 +17,7 @@
 <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
-    <div class="navbar-header"> <a class="navbar-brand" href="#"><strong><?php echo($project_name)?></strong> Brand Guide</a> </div>
+    <div class="navbar-header"> <a class="navbar-brand" href="#"><strong><?php echo($project_name)?></strong> Story &amp; Content Guide</a> </div>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Select an element: <b class="caret"></b></a>
         <ul class="dropdown-menu  scroll-menu sg-sect">
